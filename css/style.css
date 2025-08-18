@@ -64,5 +64,10 @@ header .btn-contato button{
     border:1px solid #fff;
     color: #fff;
     cursor: pointer;
+    transition: 0.5s;
 }
 
+header .btn-contato button:hover{
+    background-color: #fff;
+    color: #000;
+}
