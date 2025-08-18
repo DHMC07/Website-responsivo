@@ -27,8 +27,12 @@ header .interface{
 }
 
 .logo{
-    width: 1px;
-    height: 5px;
+   width: 90px; 
+    height: 90px; 
+    border-radius:50%; 
+    border: 3px solid #fff; 
+    margin-left: 2px;
+    border-radius: 70%;
 }
 
 
@@ -43,7 +47,14 @@ header .menu-desktop nav ul li {
 }
 
 header .menu-desktop nav ul li a {
+    color: #fff;
     text-decoration: none;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+
+header .menu-desktop nav a:hover{
+    transform: scale(1.05);
 }
 
 header .btn-contato button{
@@ -54,3 +65,4 @@ header .btn-contato button{
     color: #fff;
     cursor: pointer;
 }
+
