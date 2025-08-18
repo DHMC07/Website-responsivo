@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:#0000;
+    background:#000000;
 }
 
 .interface{
@@ -26,13 +26,15 @@ header .interface{
     justify-content: space-between;
 }
 
-header .logo{
-    max-width: 40px;
+.logo{
+    width: 1px;
+    height: 5px;
 }
 
 
 header .menu-desktop nav ul  {
     list-style: none;
+    color: #fff;
 }
 
 header .menu-desktop nav ul li {
@@ -42,7 +44,6 @@ header .menu-desktop nav ul li {
 
 header .menu-desktop nav ul li a {
     text-decoration: none;
-    color: #fff;
 }
 
 header .btn-contato button{
