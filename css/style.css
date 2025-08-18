@@ -13,3 +13,31 @@ body{
     margin: 0 auto;
 }
 
+/* Header */
+header{
+  width: 100%;  
+  padding: 40px 0;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    max-width: 40px;
+}
+
+
+header .menu-desktop nav ul  {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 40px;
+}
+
+
+
