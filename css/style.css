@@ -1,120 +1,300 @@
-*{
+/* Reset e base */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    background:#000000;
+body {
+    background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+    color: #fff;
+    line-height: 1.6;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-header .btn-contato button, section button{
-    width: 140px;  
-    height:50px;
-    background-color:transparent;
-    border:1px solid #fff;
+/* Botões */
+header .btn-contato button, 
+section button {
+    width: 150px;  
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
     color: #fff;
+    font-weight: 500;
+    border-radius: 30px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: all 0.4s ease;
+}
+
+header .btn-contato button:hover, 
+section button:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
 
 /* Header */
-header{
-  width: 100%;  
-  padding: 40px 0;
+header {
+    width: 100%;  
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
 }
 
-header .interface{
+header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
-   width: 90px; 
-    height: 90px; 
-    border-radius:50%; 
-    border: 3px solid #fff; 
-    margin-left: 2px;
-    border-radius: 70%;
+.logo {
+    width: 80px; 
+    height: 80px; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
+.logo:hover {
+    transform: rotate(5deg) scale(1.05);
+}
 
-header .menu-desktop nav ul  {
+header .menu-desktop nav ul {
     list-style: none;
-    color: #fff;
-}
-
-header .menu-desktop nav ul li {
-    display: inline-block;
-    margin: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 header .menu-desktop nav ul li a {
     color: #fff;
     text-decoration: none;
-    display: inline-block;
-    transition: 0.2s ease-in-out;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-header .menu-desktop nav a:hover{
+header .menu-desktop nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .menu-desktop nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero / Início */
+.inicio {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1608897013039-887e8f7b1c9d') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px; /* compensar header fixo */
+    color: #fff;
+    position: relative;
+}
+
+.inicio::after {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.6);
+}
+
+.inicio .txt-hero {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.inicio .txt-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.inicio .txt-hero h1 span {
+    color: #f4c542;
+}
+
+.inicio .txt-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Vantagens */
+.vantagens {
+    padding: 100px 20px;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8%;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.vantagens .itens-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.img-itens1 {
+    width: 180px; 
+    height: 180px; 
+    border-radius: 15px; 
+    border: 2px solid #fff; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-itens1:hover {
     transform: scale(1.05);
 }
 
-
-header .btn-contato button:hover, section button:hover{
-    background-color: #fff;
-    color: #000;
+.vantagens .txt-itens h3 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #f4c542;
 }
 
-/*Inicio do site*/
-section .inicio{
-    height: 90vh;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+.vantagens .txt-itens p {
+    font-size: 1rem;
+    max-width: 500px;
+    color: #ddd;
 }
 
-section .interface{
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-section .txt-hero{
-    width: 100%;
+/* MAPA */
+.mapa {
+    padding: 80px 20px;
     text-align: center;
+    background: #111;
     color: #fff;
 }
 
-section .txt-hero h1{
-    font-size: 3em;
-    line-height: 70px;
-    color: #fff;
-    font-weight: 1;
+.mapa h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #f4c542;
 }
 
-section .txt-hero h1 span{
-    display: block;
-    font-weight: 600;
+.mapa-container {
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid #f4c542;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* RODAPÉ */
+footer {
+    background: #0a0a0a;
+    color: #ccc;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+footer .footer-logo {
+    text-align: center;
+}
+
+.footer-logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #f4c542;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    color: #f4c542;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #f4c542;
+}
+
+footer .footer-contact p {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
-section .txt-hero p{
-    font-size: 1em;
-    font-weight: 200;
-    margin: 20px 0;
-}
+/* Responsividade */
+@media (max-width: 900px) {
+    header .menu-desktop nav ul {
+        gap: 20px;
+    }
 
-section .txt-hero p span{
-    display: block;
-    font-weight: 600;
+    .inicio .txt-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .vantagens .itens-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vantagens .txt-itens p {
+        margin: 0 auto;
+    }
 }
