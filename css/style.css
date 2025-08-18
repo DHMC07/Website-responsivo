@@ -31,7 +31,7 @@ header .logo{
 
 
 header .menu-desktop nav ul  {
-    list-style-type: none;
+    list-style: none;
 }
 
 header .menu-desktop nav ul li {
