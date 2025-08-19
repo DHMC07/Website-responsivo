@@ -7,8 +7,8 @@
 }
 
 body {
-    background: linear-gradient(180deg, #F5F5F5, #F5F5F5);
-    color: #fff;
+    background: #F5F5F5;
+    color: #442b00; /* Tom de castanho mais escuro para maior contraste */
     line-height: 1.6;
 }
 
@@ -19,25 +19,43 @@ body {
 }
 
 /* Botões */
-header .btn-contato button, 
+header .btn-contato button{
+    width: 150px;  
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+} 
 section button {
     width: 150px;  
     height: 50px;
     background-color: transparent;
-    border: 2px solid #754C0B;
-    color: #754C0B;
+    border: 2px solid #f4c542; /* Ouro */
+    color: #f4c542;
     font-weight: 500;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
-header .btn-contato button:hover, 
-section button:hover {
-    background: #ffffff;
-    color: #754C0B;
+
+
+header .btn-contato button:hover{
+    background: #f4c542;
+    color: #fff;
     transform: scale(1.05);
-    box-shadow: 0 0 15px #ffffff4d;
+    box-shadow: 0 0 15px #f4c54280;
+
+} 
+section button:hover {
+    background: #f4c542;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f4c54280;
 }
 
 /* Header */
@@ -47,7 +65,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #ffffff10;
+    background: #754c0b4d; /* Castanho translúcido */
     backdrop-filter: blur(6px);
     z-index: 1000;
 }
@@ -61,7 +79,7 @@ header .interface {
 .logo {
     width: 80px; 
     height: 80px; 
-    border: 2px solid #754C0B; 
+    border: 2px solid #f4c542;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -78,7 +96,7 @@ header .menu-desktop nav ul {
 }
 
 header .menu-desktop nav ul li a {
-    color: #754C0B;
+    color: #F5F5F5;
     text-decoration: none;
     font-weight: 400;
     transition: all 0.3s ease;
@@ -89,7 +107,7 @@ header .menu-desktop nav ul li a::after {
     content: "";
     width: 0;
     height: 2px;
-    background: #754C0B;
+    background: #f4c542;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -100,53 +118,83 @@ header .menu-desktop nav ul li a:hover::after {
     width: 100%;
 }
 
-
-
 /* Hero / Início */
 .inicio {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1608897013039-887e8f7b1c9d') no-repeat center/cover;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    padding-top: 100px; /* compensar header fixo */
-    color: #754C0B;
+    padding-top: 120px;
+    color: #442b00;
     position: relative;
-}
-
-.inicio::after {
-    content: "";
-    position: absolute;
-    top:0; left:0; right:0; bottom:0;
-    background: #F5F5F5;
+    overflow: hidden;
 }
 
 .inicio .txt-hero {
-    position: relative;
-    z-index: 1;
     max-width: 800px;
+    margin: 40px auto 0 auto;
+    background: #ffffffd1; /* Fundo translúcido para contraste */
+    padding: 32px 32px 24px 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px 0 rgba(60, 40, 10, 0.10);
+    text-align: center;
+    backdrop-filter: blur(2px);
+    position: relative;
+    z-index: 10;
 }
 
 .inicio .txt-hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
+    text-shadow: 0 2px 8px #fffbe9cc, 0 1px 2px #704D0033;
 }
 
 .inicio .txt-hero h1 span {
     color: #f4c542;
+    text-shadow: 0 2px 8px #fffbe9cc, 0 1px 2px #704D0033;
 }
 
 .inicio .txt-hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: #704D00;
+    text-shadow: 0 1px 2px #fffbe9cc;
+}
+@media (max-width: 900px) {
+    .inicio .txt-hero {
+        max-width: 90vw;
+        padding: 18px 8vw 16px 8vw;
+        border-radius: 12px;
+        margin: 24px auto 0 auto;
+    }
+    .inicio .txt-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .inicio .txt-hero {
+        max-width: 98vw;
+        padding: 10px 2vw 10px 2vw;
+        border-radius: 8px;
+        margin: 12px auto 0 auto;
+    }
+    .inicio .txt-hero h1 {
+        font-size: 1.2rem;
+    }
+    .inicio .txt-hero p {
+        font-size: 0.95rem;
+    }
 }
 
 /* Vantagens */
 .vantagens {
     padding: 100px 20px;
     background-color: #F5F5F5;
+    color: #442b00;
 }
 
 .vantagens .itens-container {
@@ -166,7 +214,7 @@ header .menu-desktop nav ul li a:hover::after {
     width: 180px; 
     height: 180px; 
     border-radius: 15px; 
-    border: 2px solid #754C0B; 
+    border: 2px solid #f4c542; 
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -184,29 +232,52 @@ header .menu-desktop nav ul li a:hover::after {
 .vantagens .txt-itens p {
     font-size: 1rem;
     max-width: 500px;
-    color: #754C0B;
+    color: #442b00;
 }
 
-/* SOBRE */
+/* SOBRE NÓS */
 .sobre {
-  padding: 100px 20px;
-  background: #f9f9f9;
-  text-align: center;
-  color: #754C0B;
+    padding: 100px 20px;
+    background-color: #F5F5F5;
+    color: #442b00;
 }
 
-.sobre h2 {
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  color: #704D00;
+.sobre .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #704D00;
 }
 
-.sobre p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #5a3c09;
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre-text {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.sobre-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.sobre-img {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.sobre-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #f4c542;
 }
 
 /* MAPA */
@@ -214,19 +285,19 @@ header .menu-desktop nav ul li a:hover::after {
     padding: 80px 20px;
     text-align: center;
     background: #F5F5F5;
-    color: #754C0B;
+    color: #442b00;
 }
 
 .mapa h2 {
     font-size: 2.2rem;
     margin-bottom: 30px;
-    color: #754C0B;
+    color: #704D00;
 }
 
 .mapa-container {
     width: 100%;
     margin: 0 auto;
-    border: 3px solid #754C0B;
+    border: 3px solid #f4c542;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 0 25px #5a5a5a80;
@@ -242,7 +313,7 @@ iframe {
 /* RODAPÉ */
 footer {
     background: #F5F5F5;
-    color: #754C0B;
+    color: #442b00;
     padding: 60px 20px 20px;
     margin-top: 60px;
 }
@@ -263,7 +334,7 @@ footer .footer-logo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid #754C0B;
+    border: 2px solid #f4c542;
     margin-bottom: 10px;
 }
 
@@ -299,7 +370,7 @@ footer .footer-contact p {
     border-top: 1px solid #333;
     padding-top: 15px;
     font-size: 0.9rem;
-    color: #754C0B;
+    color: #442b00;
 }
 
 /* Responsivo */
@@ -315,10 +386,6 @@ footer .footer-contact p {
 @media (max-width: 900px) {
     header .menu-desktop nav ul {
         gap: 20px;
-    }
-
-    .slider {
-        height: 400px;
     }
 
     .inicio .txt-hero h1 {

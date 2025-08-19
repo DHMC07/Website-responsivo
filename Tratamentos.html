@@ -1,118 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!--Google fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-<!--Google fonts/ -->   
-
-<link rel="stylesheet" href="css/style.css">
-    <title>Website Responsivo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratamentos | Monalisa Essence</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="trat.css">
 </head>
 <body>
-    
-    <header>
-        <div class="interface">
-            <section class="icon">
-                <img class="logo" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Logo do Site" title="Logotipo">
-            </section>
-            <section class="menu-desktop">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#Galeria">Galeria</a></li>
-                        <li><a href="#Tratamentos">Tratamentos</a></li>
-                        <li><a href="#Produtos">Produtos</a></li>
-                        <li><a href="#Sobre">Sobre</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
-           </section>
 
-        </div>
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Monalisa Essence</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="tratamentos.html" class="active">Tratamentos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </header>
+  <!-- Conteúdo -->
+  <main class="tratamentos">
+    <h1>Nossos Tratamentos</h1>
+    <div class="tratamentos-container">
 
+      <!-- Tratamento -->
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?face,spa" alt="Limpeza de pele profunda">
+        <h2>Limpeza de Pele Profunda</h2>
+        <p>Tratamento completo para remover impurezas, revitalizar a pele e devolver o brilho natural.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
- <!-- INICIO -->
-    <section class="inicio">
-        <div class="interface">
-            <div class="txt-hero">
-                <h1>Bem-vindo ao nosso <span>site de estética</span></h1>
-                <p>Descubra tratamentos e produtos <span>para realçar sua beleza</span></p>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?spa,skin" alt="Limpeza de pele normal">
+        <h2>Limpeza de Pele Normal</h2>
+        <p>Ideal para manutenção e prevenção de impurezas, deixando a pele equilibrada e saudável.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-                <a href="#">
-                    <button>Marcação</button>
-                </a>
-            </div>
-        </div>
-    </section>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?skincare,beauty" alt="Limpeza de pele master">
+        <h2>Limpeza de Pele Master</h2>
+        <p>Tratamento avançado que combina técnicas exclusivas para peles exigentes.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?vitamin,face" alt="Revitalização com vitamina C">
+        <h2>Revitalização com Vitamina C</h2>
+        <p>Promove luminosidade e uniformiza o tom da pele, combatendo o envelhecimento precoce.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?microneedling" alt="Microagulhamento facial">
+        <h2>Microagulhamento Facial</h2>
+        <p>Estimula a produção de colágeno, melhorando manchas, rugas e textura da pele.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-    <!-- Mapa -->
-    <section class="mapa" id="Localizacao">
-        <div class="interface">
-            <h2>📍 Nossa Localização</h2>
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d692.9631884056984!2d-9.238852529321889!3d38.75683419010502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecda78e5462ab%3A0xe93e1ecd66c3eacb!2sYrla%20Nails%20Beauty%20Est%C3%A9tica!5e0!3m2!1spt-PT!2spt!4v1755554324173!5m2!1spt-PT!2spt" 
-                width="100%" 
-                height="450"
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?dermaplaning" alt="Dermaplaning">
+        <h2>Dermaplaning</h2>
+        <p>Remove células mortas e pelinhos finos, proporcionando pele macia e uniforme.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="interface">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Logo" class="footer-logo-img">
-                    <p>Beleza & Estética</p>
-                </div>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?hydrafacial" alt="HydraGloss">
+        <h2>HydraGloss</h2>
+        <p>Hidratação profunda com efeito glow imediato, deixando os lábios e a pele radiantes.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Galeria">Galeria</a></li>
-                        <li><a href="#Tratamentos">Tratamentos</a></li>
-                        <li><a href="#Produtos">Produtos</a></li>
-                        <li><a href="#Sobre">Sobre</a></li>
-                    </ul>
-                </div>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?scrub,spa" alt="Esfoliação corporal">
+        <h2>Esfoliação Corporal</h2>
+        <p>Remove células mortas, melhora a circulação e proporciona pele renovada.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <p>📞 +351 912 345 678</p>
-                    <p>✉️ monalisalissenceestetica@gmail.com</p>
-                    <p>📍 Praceta da Igreja 12B <br> Amadora, Lisboa, Portugal</p>
-                </div>
-            </div>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?massage,spa" alt="Drenagem linfática">
+        <h2>Drenagem Linfática</h2>
+        <p>Reduz inchaço, melhora a circulação e promove relaxamento profundo.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-            <div class="footer-bottom">
-                <p>© 2025 Beleza & Estética - Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?spa,beauty" alt="Banho de Lua">
+        <h2>Banho de Lua</h2>
+        <p>Clareia os pelos do corpo, deixando a pele com toque macio e aparência uniforme.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-</body>
-</html>
+      <div class="tratamento-card">
+        <img src="https://source.unsplash.com/400x300/?laser,hairremoval" alt="Depilação a laser">
+        <h2>Depilação Laser</h2>
+        <p>Eficiência na remoção dos pelos indesejados com tecnologia de ponta e resultados duradouros.</p>
+        <button>Marcar tratamento</button>
+      </div>
 
-<script src="js/javascript.js"></script>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Monalisa Essence - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>

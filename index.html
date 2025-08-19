@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!--Google fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-<!--Google fonts/ -->   
-
-<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    
     <title>Website Responsivo</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
             <section class="menu-desktop">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#Home">Home</a></li>
                         <li><a href="#Galeria">Galeria</a></li>
                         <li><a href="#Tratamentos">Tratamentos</a></li>
                         <li><a href="#Produtos">Produtos</a></li>
@@ -35,87 +35,75 @@
                 <a href="#">
                     <button>Contato</button>
                 </a>
-           </section>
-
+            </section>
         </div>
-
     </header>
 
- <!-- INICIO -->
-    <section class="inicio">
-        <div class="interface">
-            <div class="txt-hero">
-                <h1>Bem-vindo ao nosso <span>site de estética</span></h1>
-                <p>Descubra tratamentos e produtos <span>para realçar sua beleza</span></p>
+    <!-- Inicio -->
+    <section class="inicio" id="Home">
+        <div class="txt-hero">
+            <h1>Bem-vindo ao nosso <span>site de estética</span></h1>
+            <p>Descubra tratamentos e produtos <span>para realçar sua beleza</span></p>
 
-                <a href="#">
-                    <button>Marcação</button>
-                </a>
+            <a href="#">
+                <button>Marcação</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="vantagens" id="Vantagens">
+        <div class="interface">
+            <article class="itens-container">
+                <div class="txt-itens">
+                    <h3>Profissionais qualificados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusantium sit consectetur alias aspernatur laborum temporibus praesentium impedit, sed dolorum. Nostrum natus excepturi quae voluptatum consequuntur? Alias consequuntur omnis non.</p>
+                </div>
+                <div class="img-itens">
+                    <img class="img-itens1" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem de Profissionais Qualificados">
+                </div>
+            </article>
+
+            <article class="itens-container">
+                <div class="img-itens">
+                    <img class="img-itens1" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem de Profissionais Qualificados">
+                </div>
+                <div class="txt-itens">
+                    <h3>Tratamentos qualificados</h3>
+                    <p>Quisquam accusantium sit consectetur alias aspernatur laborum temporibus praesentium impedit, sed dolorum. Nostrum natus excepturi quae voluptatum consequuntur? Alias consequuntur omnis non.</p>
+                </div>
+            </article>
+
+            <article class="itens-container">
+                <div class="txt-itens">
+                    <h3>Produtos qualificados</h3>
+                    <p>Sed dolorum. Nostrum natus excepturi quae voluptatum consequuntur? Alias consequuntur omnis non.</p>
+                </div>
+                <div class="img-itens">
+                    <img class="img-itens1" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem de Profissionais Qualificados">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="sobre" id="Sobre">
+        <div class="interface">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>
+                        A Monalisa Lissence Estética nasceu com a missão de oferecer uma experiência completa e personalizada para o seu bem-estar e beleza. Acreditamos que a verdadeira beleza vem de dentro e reflete-se na sua saúde e confiança.
+                    </p>
+                    <p>
+                        A nossa equipa é composta por profissionais dedicados e apaixonados pela área, sempre em busca das últimas inovações e técnicas para garantir os melhores resultados. Venha conhecer-nos e descobrir um novo nível de cuidado com a sua pele e corpo.
+                    </p>
+                </div>
+                <div class="sobre-img">
+                    <img src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem da clínica de estética Monalisa Lissence">
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="vantagens">
-        <div class="interface">
-            <article class="itens-container">
-              <div class="txt-itens">
-                <h3>Profissionais qualificados</h3>
-                <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quisquam accusantium 
-                    sit consectetur alias aspernatur laborum 
-                    temporibus praesentium impedit, sed dolorum. 
-                    Nostrum natus excepturi quae voluptatum consequuntur? 
-                    Alias consequuntur omnis non.</p>
-                </div>  
-                <div class="img-itens">
-                    <img class="img-itens1" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem de Profissionais Qualificados">
-                </div>
-            </article>
-
-            <article class="itens-container">
-                <div class="img-itens">
-                    <img class="img-itens1" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem de Profissionais Qualificados">
-                </div>
-              <div class="txt-itens">
-                <h3>Tratamentos qualificados</h3>
-                <p>Quisquam accusantium 
-                    sit consectetur alias aspernatur laborum 
-                    temporibus praesentium impedit, sed dolorum. 
-                    Nostrum natus excepturi quae voluptatum consequuntur? 
-                    Alias consequuntur omnis non.</p>
-                </div>  
-            </article>
-
-            <article class="itens-container">
-              <div class="txt-itens">
-                <h3>Produtos qualificados</h3>
-                <p>Sed dolorum. Nostrum natus excepturi quae voluptatum consequuntur? 
-                    Alias consequuntur omnis non.</p>
-                </div>  
-                <div class="img-itens">
-                    <img class="img-itens1" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Imagem de Profissionais Qualificados">
-                </div>
-            </article>
-
-        </div>
-
-    </section>
-
-    <!-- SOBRE -->
-<section class="sobre" id="Sobre">
-  <div class="interface">
-    <h2>🌸 Sobre Nós</h2>
-    <p>
-      Na <strong>Beleza & Estética</strong>, acreditamos que cuidar de si é mais do que estética, 
-      é um ato de bem-estar e autoconfiança. Nossa equipa é composta por profissionais 
-      especializados que oferecem tratamentos personalizados para valorizar a sua beleza natural.
-    </p>
-    <p>
-      Utilizamos apenas <strong>produtos de alta qualidade</strong> e técnicas atualizadas, 
-      garantindo resultados visíveis e uma experiência única em cada visita.
-    </p>
-  </div>
-</section>
 
     <!-- Mapa -->
     <section class="mapa" id="Localizacao">
@@ -134,7 +122,6 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <div class="interface">
             <div class="footer-content">
@@ -168,10 +155,6 @@
         </div>
     </footer>
 
-</body>
-</html>
-
-<script src="js/javascript.js"></script>
-
+    <script src="js/carrossel.js"></script>
 </body>
 </html>
