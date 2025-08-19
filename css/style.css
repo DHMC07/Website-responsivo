@@ -100,6 +100,8 @@ header .menu-desktop nav ul li a:hover::after {
     width: 100%;
 }
 
+
+
 /* Hero / Início */
 .inicio {
     height: 100vh;
@@ -313,6 +315,10 @@ footer .footer-contact p {
 @media (max-width: 900px) {
     header .menu-desktop nav ul {
         gap: 20px;
+    }
+
+    .slider {
+        height: 400px;
     }
 
     .inicio .txt-hero h1 {
