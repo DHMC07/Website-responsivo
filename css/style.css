@@ -33,13 +33,14 @@ header .btn-contato button{
 section button {
     width: 150px;  
     height: 50px;
-    background-color: transparent;
-    border: 2px solid #f4c542; /* Ouro */
-    color: #f4c542;
+    border: none;
+    padding: 10px 20px;
+    background: #704D00;
+    color: #fff;
     font-weight: 500;
-    border-radius: 30px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: 0.3s;
 }
 
 
@@ -52,10 +53,7 @@ header .btn-contato button:hover{
 
 } 
 section button:hover {
-    background: #f4c542;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #f4c54280;
+    background: #a6761c;
 }
 
 /* Header */
