@@ -125,7 +125,7 @@ header .menu-desktop nav ul li a:hover::after {
     justify-content: flex-start;
     text-align: center;
     padding-top: 120px;
-    color: #442b00;
+    color: #704D00;
     position: relative;
     overflow: hidden;
 }
@@ -192,7 +192,7 @@ header .menu-desktop nav ul li a:hover::after {
 .vantagens {
     padding: 100px 20px;
     background-color: #F5F5F5;
-    color: #442b00;
+    color: #704D00;
 }
 
 .vantagens .itens-container {
@@ -237,7 +237,7 @@ header .menu-desktop nav ul li a:hover::after {
 .sobre {
     padding: 100px 20px;
     background-color: #F5F5F5;
-    color: #442b00;
+    color: #704D00;
 }
 
 .sobre .section-title {
@@ -283,7 +283,7 @@ header .menu-desktop nav ul li a:hover::after {
     padding: 80px 20px;
     text-align: center;
     background: #F5F5F5;
-    color: #442b00;
+    color: #704D00;
 }
 
 .mapa h2 {
@@ -295,7 +295,7 @@ header .menu-desktop nav ul li a:hover::after {
 .mapa-container {
     width: 100%;
     margin: 0 auto;
-    border: 3px solid #f4c542;
+    border: 3px solid #704D00;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 0 25px #5a5a5a80;
@@ -322,7 +322,7 @@ iframe {
 .Top {
   width: 50px;
   height: 50px;
-  background-color: #442b00;
+  background-color: #704D00;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -334,14 +334,14 @@ iframe {
 }
 
 .Top:hover {
-  background-color: #f4c542;
+  background-color: #a6761c;
 }
 
 
 /* RODAPÉ */
 footer {
     background: #F5F5F5;
-    color: #442b00;
+    color: #704D00;
     padding: 60px 20px 20px;
     margin-top: 60px;
 }
@@ -362,7 +362,7 @@ footer .footer-logo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid #f4c542;
+    border: 2px solid #704D00;
     margin-bottom: 10px;
 }
 
@@ -386,7 +386,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #f4c542;
+    color: #a6761c;
 }
 
 footer .footer-contact p {
