@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcações | Monalisa Essence</title>
+  <link rel="stylesheet" href="marcacoes.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+   <!-- Cabeçalho -->
+
+    <header>
+        <div class="interface">
+            <section class="icon">
+                <img class="logo" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Logo do Site" title="Logotipo">
+            </section>
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Galeria">Galeria</a></li>
+                        <li><a href="#Tratamentos">Tratamentos</a></li>
+                        <li><a href="#Produtos">Produtos</a></li>
+                        <li><a href="#Sobre">Sobre</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </section>
+        </div>
+    </header>
+
+  <!-- Formulário de Marcações -->
+  <main class="marcacoes">
+    <h1>Agende o seu Tratamento</h1>
+    <form class="form-marcacao" action="#" method="POST">
+      
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="tratamento">Escolha o tratamento</label>
+      <select id="tratamento" name="tratamento" required>
+        <option value="">Selecione...</option>
+        <option>Limpeza de Pele Profunda</option>
+        <option>Limpeza de Pele Normal</option>
+        <option>Limpeza de Pele Master</option>
+        <option>Revitalização com Vitamina C</option>
+        <option>Microagulhamento Facial</option>
+        <option>Dermaplaning</option>
+        <option>HydraGloss</option>
+        <option>Esfoliação Corporal</option>
+        <option>Drenagem Linfática</option>
+        <option>Banho de Lua</option>
+        <option>Depilação Laser</option>
+      </select>
+
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="mensagem">Observações</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação? (opcional)"></textarea>
+
+      <button type="submit">Confirmar Marcação</button>
+    </form>
+  </main>
+
+<div class="Volta_top"> 
+      <a href="#"><button class="Top"><i class="fas fa-arrow-up"></i></button></a>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer-bottom">
+    <p>© 2025 Beleza & Estética - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
