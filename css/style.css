@@ -114,26 +114,43 @@ header .menu-desktop nav ul li a:hover::after {
 }
 
 
-.carousel {
-  width: 100%;
-  max-width: 900px; /* define a largura máxima */
-  margin: auto;
+/* ===== CARROSSEL (sem JS) ===== */
+.slider {
+  margin-top: 190px;                 /* compensa o header fixo */
+}
+.slider .slider-wrapper {
+  position: relative;
+  width: 1000px;                 /* largura máxima do carrossel */
+  height: 800px;                /* altura fixa do carrossel */
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 16px;
+  aspect-ratio: 16 / 6;              /* altura responsiva; ajuste se quiser mais alto */
+  background: #eee;
 }
 
-.slides {
+/* animação automática */
+.slider .slides {
   display: flex;
-  width: 300%; /* 100% * número de imagens */
-  animation: slide 12s infinite;
+  width: 100%;              /* 3 imagens → 100% cada */
+  height: 100%;
+  animation: slide 15s infinite; /* 3 imagens × 5s cada = 15s */
 }
 
-.slides img {
+.slider .slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider .slide img {
   width: 100%;
-  flex-shrink: 0;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* animação do carrossel */
+/* keyframes: movimenta de 0% → -200% */
 @keyframes slide {
   0%   { transform: translateX(0%); }
   20%  { transform: translateX(0%); }
@@ -144,8 +161,9 @@ header .menu-desktop nav ul li a:hover::after {
   66%  { transform: translateX(-200%); }
   86%  { transform: translateX(-200%); }
 
-  100% { transform: translateX(0%); }
+  100% { transform: translateX(0%); } /* volta ao início */
 }
+/* ===== FIM CARROSSEL ===== */
 
 
 /* Hero / Início */
@@ -156,7 +174,7 @@ header .menu-desktop nav ul li a:hover::after {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 40px;
     color: #704D00;
     position: relative;
     overflow: hidden;
@@ -244,7 +262,7 @@ header .menu-desktop nav ul li a:hover::after {
     width: 180px; 
     height: 180px; 
     border-radius: 15px; 
-    border: 2px solid #f4c542; 
+    border: 2px solid #704D00; 
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -307,7 +325,7 @@ header .menu-desktop nav ul li a:hover::after {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
-    border: 2px solid #f4c542;
+    border: 2px solid #704D00;
 }
 
 /* MAPA */
