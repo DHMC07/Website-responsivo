@@ -37,8 +37,9 @@
   <!-- Formulário de Marcações -->
   <main class="marcacoes">
     <h1>Agende o seu Tratamento</h1>
-    <form class="form-marcacao" action="#" method="POST">
-      
+    <form class="form-marcacao" name="marcacoes" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="marcacoes">
+
       <label for="nome">Nome completo</label>
       <input type="text" id="nome" name="nome" required>
 
@@ -62,19 +63,20 @@
         <option>Drenagem Linfática</option>
         <option>Banho de Lua</option>
         <option>Depilação Laser</option>
-      </select>
+  </select>
 
-      <label for="data">Data</label>
-      <input type="date" id="data" name="data" required>
+  <label for="data">Data</label>
+  <input type="date" id="data" name="data" required>
 
-      <label for="hora">Hora</label>
-      <input type="time" id="hora" name="hora" required>
+  <label for="hora">Hora</label>
+  <input type="time" id="hora" name="hora" required>
 
-      <label for="mensagem">Observações</label>
-      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação? (opcional)"></textarea>
+  <label for="mensagem">Observações</label>
+  <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação? (opcional)"></textarea>
 
-      <button type="submit">Confirmar Marcação</button>
-    </form>
+  <button type="submit">Confirmar Marcação</button>
+</form>
+
   </main>
 
 <div class="Volta_top"> 
