@@ -310,6 +310,32 @@ iframe {
   border: none;
 }
 
+/*Voltar ao top*/
+.Volta_top {
+  right: 0;
+  margin: 0px;
+  bottom: 20px;
+  padding: 10px;
+  position: fixed;
+  margin-top: 20px;
+}
+
+.Top {
+  background-color: #135695;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 14px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px #678097;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Top:hover {
+  background-color: #005dc8;
+}
+
 /* RODAPÉ */
 footer {
     background: #F5F5F5;
