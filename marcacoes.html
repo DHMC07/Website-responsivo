@@ -108,7 +108,7 @@
     let dataSelecionada = new Date(this.value);
     let diaSemana = dataSelecionada.getUTCDay(); // 0 = Domingo, 7 = Sábado
     if (diaSemana === 0 || diaSemana === 7) {
-      alert("Por favor, escolha um dia de segunda a sexta-feira.");
+      alert("Por favor, escolha um dia de segunda a sábado.");
       this.value = "";
     }
   });
