@@ -94,4 +94,46 @@
   </footer>
 
 </body>
+
+<script>
+  (function () {
+    const form = document.querySelector('.form-marcacao');
+    const hora = document.getElementById('hora');
+
+    function validarHora() {
+      if (!hora.value) return;
+      // HH:MM -> minutos totais
+      const [h, m] = hora.value.split(':').map(Number);
+      const total = h * 60 + m;
+      const min = 9 * 60;    // 09:00
+      const max = 20 * 60;   // 20:00
+
+      if (total < min || total > max) {
+        hora.setCustomValidity('Escolha uma hora entre 09:00 e 20:00.');
+      } else {
+        hora.setCustomValidity('');
+      }
+    }
+
+    // Clampa automaticamente se sair do intervalo (útil no iOS/Safari)
+    function clampHora() {
+      if (!hora.value) return;
+      if (hora.value < '09:00') hora.value = '09:00';
+      if (hora.value > '20:00') hora.value = '20:00';
+    }
+
+    hora.addEventListener('input', validarHora);
+    hora.addEventListener('blur', clampHora);
+
+    form.addEventListener('submit', (e) => {
+      validarHora();
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      }
+    });
+  })();
+</script>
+
+
 </html>
