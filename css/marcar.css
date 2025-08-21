@@ -209,12 +209,13 @@ header .menu-desktop nav ul li a:hover::after {
   .menu-desktop {
     display: none; /* escondemos o menu normal */
     position: absolute;
-    top: 70px; /* altura do header */
+    top: 100%; /* posiciona logo abaixo do header */
     left: 0;
     width: 100%;
     background: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 18px 0 24px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   }
 
   .menu-desktop.active {
@@ -227,6 +228,8 @@ header .menu-desktop nav ul li a:hover::after {
   }
 
   .menu-toggle {
-    display: block; /* agora aparece o ícone hamburguer */
+  display: block; /* agora aparece o ícone hamburguer */
+  position: relative;
+  z-index: 3000; /* garante que o toggle fique acima do menu aberto */
   }
 }

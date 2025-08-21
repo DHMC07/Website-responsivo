@@ -128,17 +128,39 @@
     }
   });
 
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
-
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-    toggle.innerHTML = menu.classList.contains("active") 
-      ? '<i class="fas fa-times"></i>'  // muda para "X"
-      : '<i class="fas fa-bars"></i>'; // volta para hambúrguer
-  });
-
+  
 </script>
 
-
 </html>
+
+<!-- Script do menu hamburguer (abre/fecha, fecha ao clicar fora e ao clicar em links) -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menuDesktop = document.querySelector(".menu-desktop");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menuDesktop.classList.toggle("active");
+    toggle.innerHTML = menuDesktop.classList.contains("active")
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  // Fecha menu ao clicar fora
+  document.addEventListener("click", (e) => {
+    if (menuDesktop.classList.contains("active") && !menuDesktop.contains(e.target) && e.target !== toggle) {
+      menuDesktop.classList.remove("active");
+      toggle.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+
+  // Fecha menu ao clicar em um link
+  menuDesktop.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (menuDesktop.classList.contains("active")) {
+        menuDesktop.classList.remove("active");
+        toggle.innerHTML = '<i class="fas fa-bars"></i>';
+      }
+    });
+  });
+</script>
