@@ -332,6 +332,9 @@ header .menu-desktop nav ul li a:hover::after {
 .sobre-img {
     flex-basis: 40%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sobre-img img {
@@ -339,6 +342,9 @@ header .menu-desktop nav ul li a:hover::after {
     height: auto;
     border-radius: 15px;
     border: 2px solid #704D00;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* MAPA */
@@ -534,6 +540,77 @@ footer .footer-contact p {
         margin-right: 15px;
     }
 
+    /* Mapa responsivo */
+    .mapa {
+        padding: 10px 2vw;
+    }
+    .mapa h2 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+    .mapa-container {
+        border-radius: 8px;
+        box-shadow: 0 0 10px #5a5a5a40;
+        border-width: 2px;
+        width: 100%;
+        min-width: 0;
+        max-width: 98vw;
+    }
+    .mapa-container iframe {
+        width: 100% !important;
+        min-width: 0;
+        height: 220px !important;
+    }
+
+    /* Vantagens responsivo */
+    .vantagens {
+        padding: 16px 2vw 0 2vw;
+    }
+    .vantagens .itens-container,
+    .vantagens .itens-container1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    .vantagens .txt-itens {
+        max-width: 98vw;
+        margin: 0 auto 10px auto;
+    }
+    .img-itens1 {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 8px;
+    }
+    .vantagens .txt-itens h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    .vantagens .txt-itens p {
+        font-size: 0.98rem;
+        max-width: 95vw;
+    }
+    footer {
+        padding: 18px 2vw 18px;
+        margin-top: 30px;
+    }
+    footer .footer-content {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    .footer-logo-img {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 10px;
+    }
+
     /* SOBRE responsivo */
     .sobre {
         flex-direction: column;
@@ -562,7 +639,9 @@ footer .footer-contact p {
         max-width: 90vw;
         min-width: 120px;
         height: auto;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .sobre .section-title {
         font-size: 1.5rem;
