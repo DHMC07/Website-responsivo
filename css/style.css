@@ -240,17 +240,24 @@ header .menu-desktop nav ul li a:hover::after {
 
 /* Vantagens */
 .vantagens {
-    padding: 100px 20px;
+    padding-top: 20px;
     background-color: #F5F5F5;
     color: #704D00;
+}
+
+.vantagens .itens-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .vantagens .itens-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 8%;
-    margin-bottom: 80px;
+    justify-content: space-around;
+    margin-bottom: 60px;
     flex-wrap: wrap;
 }
 
@@ -285,9 +292,13 @@ header .menu-desktop nav ul li a:hover::after {
 
 /* SOBRE NÓS */
 .sobre {
-    padding: 100px 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
     background-color: #F5F5F5;
     color: #704D00;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .sobre .section-title {
@@ -322,7 +333,7 @@ header .menu-desktop nav ul li a:hover::after {
 }
 
 .sobre-img img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 15px;
     border: 2px solid #704D00;
@@ -330,7 +341,7 @@ header .menu-desktop nav ul li a:hover::after {
 
 /* MAPA */
 .mapa {
-    padding: 80px 20px;
+    padding: 2px 20px;
     text-align: center;
     background: #F5F5F5;
     color: #704D00;
@@ -390,9 +401,9 @@ iframe {
 
 /* RODAPÉ */
 footer {
-    background: #F5F5F5;
+    background: #ece2d5b1; /* Castanho translúcido */
     color: #704D00;
-    padding: 60px 20px 20px;
+    padding: 20px 20px 20px;
     margin-top: 60px;
 }
 
