@@ -534,6 +534,44 @@ footer .footer-contact p {
         margin-right: 15px;
     }
 
+    /* SOBRE responsivo */
+    .sobre {
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .sobre-content {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .sobre-text {
+        flex-basis: 100%;
+        min-width: 0;
+        max-width: 95vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sobre-img {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sobre-img img {
+        max-width: 90vw;
+        min-width: 120px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .sobre .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+    .sobre-text p {
+        font-size: 1rem;
+    }
+
     .inicio {
         padding-top: 10px;
         min-height: unset;
