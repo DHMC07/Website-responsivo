@@ -463,15 +463,6 @@ footer .footer-contact p {
     color: #442b00;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    footer .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
 /* Responsividade */
 @media (max-width: 900px) {
     header .menu-desktop nav ul {
@@ -525,4 +516,9 @@ footer .footer-contact p {
   .menu-toggle {
     display: block; /* agora aparece o ícone hamburguer */
   }
+
+  footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
