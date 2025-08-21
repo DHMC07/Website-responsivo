@@ -517,6 +517,11 @@ footer .footer-contact p {
     display: block; /* agora aparece o ícone hamburguer */
   }
 
+  .slider .slider-wrapper {
+    width: 350px;
+    height: 300px; /* altura reduzida para mobile */
+  }
+
   footer .footer-content {
         flex-direction: column;
         text-align: center;
