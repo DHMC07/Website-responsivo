@@ -1,3 +1,4 @@
+
 /* Reset e base */
 * {
     margin: 0;
@@ -493,37 +494,64 @@ footer .footer-contact p {
 
 /* Mobile: até 768px */
 @media (max-width: 768px) {
-  .menu-desktop {
-    display: none; /* escondemos o menu normal */
-    position: absolute;
-    top: 70px; /* altura do header */
-    left: 0;
-    width: 100%;
-    background: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .menu-desktop.active {
-    display: block; /* só mostra quando ativamos */
-  }
-
-  .menu-desktop ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .menu-toggle {
-    display: block; /* agora aparece o ícone hamburguer */
-  }
-
-  .slider .slider-wrapper {
-    width: 350px;
-    height: 300px; /* altura reduzida para mobile */
-  }
-
-  footer .footer-content {
-        flex-direction: column;
+    .menu-desktop {
+        display: none; /* escondemos o menu normal */
+        position: absolute;
+        top: 70px; /* altura do header */
+        left: 0;
+        width: 100%;
+        background: white;
         text-align: center;
+        padding: 20px 0;
     }
+
+    .menu-desktop.active {
+        display: block; /* só mostra quando ativamos */
+    }
+
+    .menu-desktop ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block; /* agora aparece o ícone hamburguer */
+    }
+
+    .slider {
+        margin-top: 90px; /* reduzido para mobile */
+        margin-bottom: 0;
+        padding-top: 60px;
+        width: 100px;
+    }
+    .slider .slider-wrapper {
+        width: 98vw;
+        height: 400px;
+        min-width: 0;
+        max-width: 100vw;
+        border-radius: 8px;
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+
+    .inicio {
+        padding-top: 10px;
+        min-height: unset;
+    }
+    .inicio .txt-hero {
+        margin-top: 10px;
+    }
+    .vantagens {
+        padding-top: 10px;
+    }
+
+.sobre-img img {
+    max-width: 200%;
+    height: auto;
+}
+
+ footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
