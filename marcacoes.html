@@ -11,28 +11,35 @@
 <body>
 
   <header>
-        <div class="interface">
-            <section class="icon">
-                <img class="logo" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Logo do Site" title="Logotipo">
-            </section>
-            <section class="menu-desktop">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#Galeria">Galeria</a></li>
-                        <li><a href="tratamentos.html">Tratamentos</a></li>
-                        <li><a href="#Produtos">Produtos</a></li>
-                        <li><a href="index.html#Sobre">Sobre</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
-            </section>
+      <div class="interface">
+        <section class="icon">
+            <img class="logo" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Logo do Site" title="Logotipo">
+      </section>
+
+      <!-- Botão hamburguer -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
         </div>
-    </header>
+
+       <section class="menu-desktop">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#Galeria">Galeria</a></li>
+              <li><a href="tratamentos.html">Tratamentos</a></li>
+              <li><a href="#Produtos">Produtos</a></li>
+              <li><a href="index.html#Sobre">Sobre</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="btn-contato">
+          <a href="index.html#contacto">
+            <button>Contato</button>
+          </a>
+        </section>
+      </div>
+  </header>
 
   <!-- Formulário de Marcações -->
   <main class="marcacoes">
@@ -116,10 +123,22 @@
     const diaSemana = valor.getDay(); // 0=Domingo, 6=Sábado
 
     if (diaSemana === 0) { // Domingo
-      alert("Não aceitamos marcações ao domingo.");
+      alert("Não aceitamos marcações ao domingo. Escolha de segunda a sábado.");
       this.value = ""; // limpa a seleção
     }
   });
+
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    toggle.innerHTML = menu.classList.contains("active") 
+      ? '<i class="fas fa-times"></i>'  // muda para "X"
+      : '<i class="fas fa-bars"></i>'; // volta para hambúrguer
+  });
+
 </script>
+
 
 </html>

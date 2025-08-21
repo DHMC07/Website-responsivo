@@ -224,3 +224,38 @@ header .menu-desktop nav ul li a:hover::after {
     font-size: 0.9rem;
     color: #442b00;
 }
+
+
+/* Esconde o menu hamburguer no desktop */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile: até 768px */
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none; /* escondemos o menu normal */
+    position: absolute;
+    top: 70px; /* altura do header */
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .menu-desktop.active {
+    display: block; /* só mostra quando ativamos */
+  }
+
+  .menu-desktop ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block; /* agora aparece o ícone hamburguer */
+  }
+}

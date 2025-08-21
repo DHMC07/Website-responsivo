@@ -17,6 +17,12 @@
             <section class="icon">
                 <img class="logo" src="https://i.postimg.cc/K8q4m0Vv/6508-F792-1-F7-C-4-A59-B00-A-86-D8-B7-CFA0-CF.png" alt="Logo do Site" title="Logotipo">
             </section>
+
+          <!-- Botão hamburguer -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+
             <section class="menu-desktop">
                 <nav>
                     <ul>
@@ -155,4 +161,17 @@
   </footer>
 
 </body>
+
+<script>
+   const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    toggle.innerHTML = menu.classList.contains("active") 
+      ? '<i class="fas fa-times"></i>'  // muda para "X"
+      : '<i class="fas fa-bars"></i>'; // volta para hambúrguer
+  });
+</script>
+
 </html>
