@@ -150,6 +150,7 @@ header .menu-desktop nav ul li a:hover::after {
   display: block;
 }
 
+
 /* keyframes: movimenta de 0% → -200% */
 @keyframes slide {
   0%   { transform: translateX(0%); }
