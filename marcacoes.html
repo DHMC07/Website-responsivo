@@ -102,4 +102,24 @@
   </footer>
 
 </body>
+
+<script>
+  const inputData = document.getElementById("data");
+
+  // Definir o mínimo como hoje
+  const hoje = new Date().toISOString().split("T")[0];
+  inputData.min = hoje;
+
+  // Bloquear domingos
+  inputData.addEventListener("input", function() {
+    const valor = new Date(this.value);
+    const diaSemana = valor.getDay(); // 0=Domingo, 6=Sábado
+
+    if (diaSemana === 0) { // Domingo
+      alert("Não aceitamos marcações ao domingo.");
+      this.value = ""; // limpa a seleção
+    }
+  });
+</script>
+
 </html>
