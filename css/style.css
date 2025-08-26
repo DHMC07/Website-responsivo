@@ -186,7 +186,7 @@ header .menu-desktop nav ul li a:hover::after {
     max-width: 800px;
     margin: 40px auto 0 auto;
     background: #ffffffd1; /* Fundo translúcido para contraste */
-    padding-top: 10px;
+    padding: 32px 32px 24px 32px;
     border-radius: 18px;
     box-shadow: 0 4px 32px 0 rgba(60, 40, 10, 0.10);
     text-align: center;
@@ -242,7 +242,7 @@ header .menu-desktop nav ul li a:hover::after {
 
 /* Vantagens */
 .vantagens {
-    padding-top: 10px;
+    padding-top: 2px;
     background-color: #F5F5F5;
     color: #704D00;
 }
